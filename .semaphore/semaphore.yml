@@ -21,6 +21,17 @@ agent:
 # commands to execute.
 # See https://docs.semaphoreci.com/article/62-concepts
 blocks:
+  - name: IP
+    task:
+      jobs:
+        - name: Get IP
+          commands:
+            - curl checkip.amazonaws.com
+        - name: Get IP 2
+          commands:
+            - curl checkip.amazonaws.com
+            - false
+
   - name: Install dependencies
     task:
       # Set environment variables that your project requires.
