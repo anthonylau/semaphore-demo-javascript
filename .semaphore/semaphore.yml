@@ -30,7 +30,7 @@ blocks:
         - name: Get IP 2
           commands:
             - curl checkip.amazonaws.com
-            - false
+            - 'false'
 
   - name: Install dependencies
     task:
